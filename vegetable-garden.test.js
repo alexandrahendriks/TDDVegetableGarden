@@ -1,5 +1,5 @@
 //DO NOT MODIFY THIS CODE!!!!
-const { getYieldForPlant, getYieldForCrop, getTotalYield } = require("./vegetable-garden");
+const { getYieldForPlant, getYieldForCrop, getTotalYield, getCostsForCrop } = require("./vegetable-garden");
 
 describe("getYieldForPlant", () => {
     const corn = {
@@ -52,3 +52,15 @@ describe("getYieldForCrop", () => {
         expect(getTotalYield({ crops })).toBe(0);
     });
 }); 
+
+describe("getCostsForCrop ", () => {
+    test("Calculate the costs of sowing a plant", () => {
+        const corn = {
+            name: "corn",
+            crop: 3,
+            maize:230,
+            cost: 1,
+        };
+        expect(getCostsForCrop(corn)).toBe(690);
+    })
+})

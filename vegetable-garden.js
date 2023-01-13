@@ -27,9 +27,17 @@ const getTotalYield = (...plant) => {
     return sum;
 };
 
+const getCostsForCrop = plant => {
+    return (plant.crop * plant.maize * plant.cost)
+}
 
 module.exports = {
     getYieldForPlant,
     getYieldForCrop,
     getTotalYield,
+    getCostsForCrop,
+    //getRevenueForCrop,
+    //getProfitForCrop,
+    //getTotalProfit,
+
 }
