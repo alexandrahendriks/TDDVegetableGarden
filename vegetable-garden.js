@@ -26,7 +26,8 @@ const getTotalYield = (...plant) => {
     });
     return sum;
 };
- 
+
+
 module.exports = {
     getYieldForPlant,
     getYieldForCrop,

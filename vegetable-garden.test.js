@@ -43,12 +43,12 @@ describe("getYieldForCrop", () => {
         expect(getTotalYield( {crops} )).toBe(23);
     });
 
-    /* test("Calculate total yield with 0 amount", () => {
+     test("Calculate total yield with 0 amount", () => {
         const corn = {
             name: "corn",
             yield: 3,
         };
         const crops = [{ crop: corn, numCrops: 0 }];
         expect(getTotalYield({ crops })).toBe(0);
-    }); */
+    });
 }); 
